@@ -5,22 +5,39 @@
 <title>A McRae | Publications</title>
 <link rel="icon" type="image/png" href="/files/favicon.png">
 <style>
-  li + li {
-  margin-top: 1ex;
-}
 
-nav li { margin-top: 0ex; }
+  .spacedlist li + li {
+    margin-top: 1ex;
+  }
 
-body {
-  max-width:45em;
-  margin:auto
-}
+  #navheader {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      border-bottom: solid;
+    }
+    li { display: inline-block; }
+    li a {
+      display: block;
+      padding: 1ex 1em 1ex 0em;
+      /* text-align: center; */
+    }
+  }
+
+  body {
+    max-width:45em;
+    margin:auto
+  }
+
+  h1 {font-size: 1.6em;}
+  h2 {font-size: 1.2em;}
+  h3 {font-size: 1em;}
 
 </style>
 </head>
 <body>
-  <nav>
-    <h3>Navigation</h4>
+  <nav id="navheader">
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/publications/">Publications</a></li>
@@ -28,11 +45,12 @@ body {
       <li><a href="/travel/">Travel</a></li>
     </ul>
   </nav>
-  <section>
-    <p>See also my <a href="https://scholar.google.com/citations?user=GT_Ml_cAAAAJ">Google Scholar profile</a>.</p>
+  <main>
+<h1>Publications</h1>
+<p>See also my <a href="https://scholar.google.com/citations?user=GT_Ml_cAAAAJ">Google Scholar profile</a>.</p>
 <section>
 	<h2 id="preprint">Preprints</h2>
-	<ul>
+	<ul class="spacedlist">
 		<li><b>A. D. McRae</b>, P. Abdalla, A. S. Bandeira, and N. Boumal, <q><a href="https://arxiv.org/abs/2407.13407">Nonconvex landscapes for <b>Z</b><sub>2</sub> synchronization and graph clustering are benign near exact recovery thresholds</a>,</q> 2024</li>
 		<li>C. Criscitiello, Q. Rebjock, <b>A. D. McRae</b>, and N. Boumal, <q><a href="https://arxiv.org/abs/2405.18273">Synchronization on circles and spheres with nonlinear interactions</a>,</q> 2024</li>
 		<li><b>A. D. McRae</b>, <q><a href="https://arxiv.org/abs/2404.12828">Low solution rank of the matrix LASSO under RIP with consequences for rank-constrained algorithms</a>,</q> 2024</li>
@@ -41,7 +59,7 @@ body {
 
 <section>
 	<h2 id="journal">Journal publications</h2>
-	<ul>
+	<ul class="spacedlist">
 		<li>C. Kaushik, <b>A. D. McRae</b>, M. Davenport, and V. Muthukumar, <q><a href="https://doi.org/10.1137/23M1568764">New Equivalences between Interpolation and SVMs: Kernels and Structured Features</a>,</q> <i>SIAM Journal on Mathematics of Data Science</i> 6(3), 2024 (<a href="https://arxiv.org/abs/2305.02304">arXiv</a>)</li>
 		<li><b>A. D. McRae</b> and N. Boumal, <q><a href="https://doi.org/10.1137/23M1584642">Benign Landscapes of Low-Dimensional Relaxations for Orthogonal Synchronization on General Graphs</a>,</q> <i>SIAM Journal on Optimization</i> 34(2), 2024 (<a href="https://arxiv.org/abs/2307.02941">arXiv</a>)</li>
 		<li><b>A. D. McRae</b>, J. Romberg, and M. A. Davenport, <q><a href="https://doi.org/10.1109/TIT.2022.3228508">Optimal convex lifted sparse phase retrieval and PCA with an atomic matrix norm regularizer</a>,</q> <i>IEEE Transactions on Information Theory</i> 69(3), 2023 (<a href="https://arxiv.org/abs/2111.04652">arXiv</a>)</li>
@@ -51,7 +69,7 @@ body {
 
 <section>
 	<h2 id="conference">Conference publications</h2>
-	<ul>
+	<ul class="spacedlist">
 		<li>A. Xu, <b>A. D. McRae</b>, J. Wang, M. A. Davenport, and A. Pananjady, <q><a href="https://papers.nips.cc/paper_files/paper/2023/hash/3a07c3a67cfe50d3236b71fb674c7f30-Abstract-Conference.html">Perceptual adjustment queries and an inverted measurement paradigm for low-rank metric learning</a>,</q> NeurIPS 2023 (<a href="https://arxiv.org/abs/2309.04626">arXiv</a>)</li>
 		<li><b>A. D. McRae</b>, A. Xu, J. Jin, N. Nadagouda, N. Ahad, P. Guan, S. Karnik, and M. A. Davenport, <q><a href="https://doi.org/10.1109/ICASSP43922.2022.9747038">Delta Distancing: A Lifting Approach to Localizing Items From User Comparisons</a>,</q> ICASSP 2022 (<a href="files/delta_distancing.pdf">ungated</a>)</li>
 		<li><b>A. D. McRae</b>, S. Karnik, M. A. Davenport, and V. Muthukumar, <q><a href="https://proceedings.mlr.press/v151/mcrae22a.html">Harmless interpolation in regression and classification with structured features</a>,</q> AISTATS 2022 (<a href="https://arxiv.org/abs/2111.05198">arXiv</a>)</li>
@@ -61,10 +79,11 @@ body {
 
 <section>
 	<h2 id="thesis">Thesis</h2>
-	<ul>
+	<ul class="spacedlist">
 		<li>A. D. McRae, <a href="http://hdl.handle.net/1853/66587"><i>Structured Statistical Estimation via Optimization</i></a>, Ph.D. thesis, 2022 (<a href="files/MCRAE-DISSERTATION-2022.pdf">local copy</a>)</li>
 	</ul>
 </section>
-  </section>
+</main>
+
 </body>
 </html>

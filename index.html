@@ -5,22 +5,39 @@
 <title>A McRae | Home</title>
 <link rel="icon" type="image/png" href="/files/favicon.png">
 <style>
-  li + li {
-  margin-top: 1ex;
-}
 
-nav li { margin-top: 0ex; }
+  .spacedlist li + li {
+    margin-top: 1ex;
+  }
 
-body {
-  max-width:45em;
-  margin:auto
-}
+  #navheader {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      border-bottom: solid;
+    }
+    li { display: inline-block; }
+    li a {
+      display: block;
+      padding: 1ex 1em 1ex 0em;
+      /* text-align: center; */
+    }
+  }
+
+  body {
+    max-width:45em;
+    margin:auto
+  }
+
+  h1 {font-size: 1.6em;}
+  h2 {font-size: 1.2em;}
+  h3 {font-size: 1em;}
 
 </style>
 </head>
 <body>
-  <nav>
-    <h3>Navigation</h4>
+  <nav id="navheader">
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/publications/">Publications</a></li>
@@ -28,18 +45,20 @@ body {
       <li><a href="/travel/">Travel</a></li>
     </ul>
   </nav>
-  <section>
-    <h2>Andrew D. McRae</h2>
+  <main>
+<section>
+<h1>Andrew D. McRae</h1>
 <ul>
     <li>E-mail: <a href="mailto:andrew.mcrae@epfl.ch">andrew.mcrae@epfl.ch</a></li>
     <li><a href="files/mcrae_cv.pdf">CV</a></li>
     <li><a href="https://people.epfl.ch/andrew.mcrae/?lang=en">EPFL directory page</a> with more contact information</li>
 </ul>
+</section>
 
-<main style="text-align:justify;">
+<section style="text-align:justify;">
     <p>
         I am a postdoc in the <a href="https://www.epfl.ch/labs/optim/">OPTIM</a> lab at the EPFL Institute of Mathematics, advised by <a href="https://sma.epfl.ch/~nboumal/">Nicolas Boumal</a>.
-        Prior to that, I graduated from Georgia Tech in May 2022 with a Ph.D. in <a href="https://ece.gatech.edu">Electrical and Computer Engineering</a>,
+        Prior to that, I graduated from Georgia Tech in May 2022 with a Ph.D. in Electrical and Computer Engineering,
         advised by <a href="https://mdav.ece.gatech.edu">Mark Davenport</a>.
     </p>
     <p>
@@ -54,9 +73,8 @@ body {
 
         For more information on my work, see my <a href="/publications/">publications page</a> or <a href="https://scholar.google.com/citations?user=GT_Ml_cAAAAJ">Google Scholar profile</a>.
     </p>
-
+</section>
 </main>
 
-  </section>
 </body>
 </html>

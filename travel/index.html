@@ -5,22 +5,39 @@
 <title>A McRae | Travel</title>
 <link rel="icon" type="image/png" href="/files/favicon.png">
 <style>
-  li + li {
-  margin-top: 1ex;
-}
 
-nav li { margin-top: 0ex; }
+  .spacedlist li + li {
+    margin-top: 1ex;
+  }
 
-body {
-  max-width:45em;
-  margin:auto
-}
+  #navheader {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      border-bottom: solid;
+    }
+    li { display: inline-block; }
+    li a {
+      display: block;
+      padding: 1ex 1em 1ex 0em;
+      /* text-align: center; */
+    }
+  }
+
+  body {
+    max-width:45em;
+    margin:auto
+  }
+
+  h1 {font-size: 1.6em;}
+  h2 {font-size: 1.2em;}
+  h3 {font-size: 1em;}
 
 </style>
 </head>
 <body>
-  <nav>
-    <h3>Navigation</h4>
+  <nav id="navheader">
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/publications/">Publications</a></li>
@@ -28,9 +45,9 @@ body {
       <li><a href="/travel/">Travel</a></li>
     </ul>
   </nav>
-  <section>
-    <h2>Travel</h2>
-<ul>
+  <main>
+<h1>Travel</h1>
+<ul class="spacedlist">
 	<li>
 		<a href="https://ismp2024.gerad.ca">ISMP 2024</a>
 		<br/>Presentation <q><a href="files/ismp2024.pdf">Benign nonconvexity of Burer-Monteiro SDP factorization for group synchronization</a></q>
@@ -122,7 +139,7 @@ body {
 		<br/><b>Finalist for Best Student Paper Award</b> for <a href=files/Abstract228-MCRAE-228.pdf>extended abstract</a> 
 	</li>
 </ul>
+</main>
 
-  </section>
 </body>
 </html>
